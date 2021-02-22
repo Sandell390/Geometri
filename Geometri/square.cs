@@ -9,25 +9,27 @@ namespace Geometri
     class square
     {
 
-        private int side;
+        private int side; //længde af side
 
         public int Side 
         {
             set 
             {
-                this.side = value;
+                side = value;
             }
             get 
             {
-                return this.side;
+                return side;
             }
         }
 
+        //Sætter side
         public square(int _side) 
         {
             side = _side;
         }
 
+        //Udregner omkreds 
         public int omkreds() 
         {
             int omkreds = side * 4;
@@ -36,6 +38,7 @@ namespace Geometri
             return omkreds;
         }
 
+        //Udregner areal
         public int areal() 
         {
             int areal = side * side;
